@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `headless`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `http://headless.local`
   },
   plugins: [{
     resolve: 'gatsby-source-wordpress',
@@ -21,8 +21,8 @@ module.exports = {
   }, {
     resolve: 'gatsby-source-filesystem',
     options: {
-      "name": "pages",
-      "path": "./src/pages/"
+      "name": "blog",
+      "path": "./src/blog/"
     },
     __key: "pages"
   }]
